@@ -1,0 +1,32 @@
+.container {
+  margin-top: 5rem;
+}
+
+.list-group {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.list-group-item {
+  border-color: #d6d6d6;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.list-group-item:hover {
+  background-color: #e2e2e2;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}

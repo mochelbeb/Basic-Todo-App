@@ -1,0 +1,52 @@
+<div class="container">
+  <h1 class="mb-3">Todo List</h1>
+  <div class="card">
+    <div class="card-body">
+      <form class="d-flex">
+        <input class="form-control me-2" name= "newTaskDescription" type="text" placeholder="Add new task" [(ngModel)]="newTaskDescription">
+        <button class="btn btn-primary" type="submit" (click) = "addTask(newTaskDescription)">Add</button>
+      </form>
+    </div>
+  </div>
+  <div class="list-group mt-3">
+    <div *ngFor="let task of tasks" class="list-group-item d-flex justify-content-between align-items-center">
+      <input class="form-check-input" type="checkbox" id="completedCheckbox" [checked]="task.completed" (change)="toggleComplete(task)">
+      <span class="me-3" [ngClass]="{'line-through': task.completed}" *ngIf="task">{{ task.description }}</span>
+      <button class="btn btn-danger btn-sm" (click)="deleteTask(task)">Delete</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="todo">
+  <div class="add-todo">
+    <input type="text" placeholder="Add new task" [(ngModel)]="newTaskDescription">
+    <button class="btn btn-primary" (click)="addTask(newTaskDescription)">Add</button>
+  </div>
+
+  <ul>
+    <li *ngFor="let task of tasks">
+      <label>
+        <input type="checkbox" [checked]="task.completed" (change)="toggleComplete(task)">
+        {{ task.description }}
+      </label>
+    </li>
+  </ul>
+</div>
+ -->

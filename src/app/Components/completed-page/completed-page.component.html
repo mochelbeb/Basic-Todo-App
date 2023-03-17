@@ -1,0 +1,9 @@
+<div class="container">
+  <h1 class="mb-3">Completed Tasks</h1>
+  <div class="list-group">
+    <div *ngFor="let task of Completedtasks" class="list-group-item d-flex justify-content-between align-items-center">
+      <span class="me-3">{{ task.description }}</span>
+      <button class="btn btn-danger btn-sm" (click)="deleteTask(task)">Delete</button>
+    </div>
+  </div>
+</div>
