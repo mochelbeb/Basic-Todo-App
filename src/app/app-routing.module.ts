@@ -5,8 +5,8 @@ import { CompletedPageComponent } from './Components/completed-page/completed-pa
 
 const routes: Routes = [
   { path: '', redirectTo: '/todo', pathMatch: 'full' },
-  { path: 'todo', component: TodoListComponent },
-  { path: 'completed' , component: CompletedPageComponent},
+  { path: 'Basic-Todo-App/todo', component: TodoListComponent },
+  { path: 'Basic-Todo-App/completed' , component: CompletedPageComponent},
 
 ];
 
