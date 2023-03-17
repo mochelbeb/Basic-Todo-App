@@ -7,7 +7,6 @@ const routes: Routes = [
   { path: '', redirectTo: 'Basic-Todo-App/todo', pathMatch: 'full' },
   { path: 'Basic-Todo-App/todo', component: TodoListComponent },
   { path: 'Basic-Todo-App/completed' , component: CompletedPageComponent},
-
 ];
 
 @NgModule({
