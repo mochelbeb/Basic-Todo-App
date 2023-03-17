@@ -4,9 +4,9 @@ import { TodoListComponent } from './Components/todo-list/todo-list.component';
 import { CompletedPageComponent } from './Components/completed-page/completed-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/todo', pathMatch: 'full' },
-  { path: 'todo', component: TodoListComponent },
-  { path: 'completed' , component: CompletedPageComponent},
+  { path: '', redirectTo: 'Basic-Todo-App/todo', pathMatch: 'full' },
+  { path: 'Basic-Todo-App/todo', component: TodoListComponent },
+  { path: 'Basic-Todo-App/completed' , component: CompletedPageComponent},
 
 ];
 
